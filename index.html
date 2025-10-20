@@ -5,63 +5,78 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Mighty Road Logistics</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <meta name="description" content="Mighty Road Logistics - Reliable transport and logistics services in Chattanooga, TN.">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
-        <!-- Primary logo; workspace contains logo1.jpg, logo2.jpg, logo3.jpg -->
         <img id="site-logo" src="img/logo/logo1.jpg" alt="Mighty Road Logistics logo" class="logo" onerror="this.style.display='none'">
-        <h1>Mighty Road Logistics</h1>
+        <h1 class="visually-hidden">Mighty Road Logistics</h1>
       </div>
-      <nav class="contact-nav">
-        <a href="tel:+14234902242" class="phone">+1 (423) 490-22242</a>
-        <a href="mailto:mightyroadlogistics7@gmail.com" class="email">mightyroadlogistics7@gmail.com</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#" class="nav-cta phone-cta" onclick="location.href='tel:+14234902242'">Call</a>
+        <a href="#contact" class="nav-cta primary-cta">Get a Quote</a>
       </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
     </div>
   </header>
 
   <main>
     <section class="hero">
+      <div class="hero-bg" role="img" aria-label="Truck on the road">
+        <img src="img/hero-truck.jpg" alt="Truck on the road" onerror="this.style.display='none'">
+      </div>
       <div class="container hero-inner">
-        <div class="hero-copy">
+        <div class="hero-copy glass">
+          <span class="eyebrow">Mighty Road Logistics</span>
           <h2>Reliable Transport & Logistics</h2>
-          <p>Fast, secure, and professional freight and delivery services across Chattanooga and beyond.</p>
-          <a class="btn-primary" href="#contact">Get a Quote</a>
-        </div>
-        <div class="hero-image">
-          <img src="img/hero-truck.jpg" alt="Truck on the road" onerror="this.style.display='none'">
+          <p>Fast, secure, and professional freight and delivery services across Chattanooga and beyond. Punctuality, security, and clear communication are our promise.</p>
+          <div class="hero-ctas">
+            <a class="btn-primary" href="#contact">Get a Quote</a>
+            <a class="btn-ghost" href="#services">Our Services</a>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="info container">
-      <div class="card">
+      <div class="card glass">
         <h3>Contact</h3>
-        <p>Address: 1806 Glen Oaks Terrace<br>Chattanooga, TN 37412</p>
+        <p>1806 Glen Oaks Terrace<br>Chattanooga, TN 37412</p>
         <p>Phone: <a href="tel:+14234902242">+1 (423) 490-22242</a></p>
         <p>Email: <a href="mailto:mightyroadlogistics7@gmail.com">mightyroadlogistics7@gmail.com</a></p>
       </div>
 
-      <div class="card">
-        <h3>Mission</h3>
-        <p>To provide dependable, efficient, and safe logistics solutions that keep our clients moving forward. We focus on punctuality, security, and transparent communication.</p>
+      <div class="card glass">
+        <h3>Our Mission</h3>
+        <p>To deliver dependable, efficient, and secure logistics solutions that help businesses succeed — on time, every time.</p>
       </div>
     </section>
 
-    <section class="services container">
-      <h2>Services</h2>
+    <section id="services" class="services container">
+      <div class="section-head">
+        <h2>Services</h2>
+        <p class="muted">Flexible logistics solutions tailored for businesses of all sizes.</p>
+      </div>
       <div class="services-grid">
-        <div class="service">
+        <div class="service glass">
+          <div class="icon">🚚</div>
           <h4>Freight Transport</h4>
           <p>Regional and long-haul trucking services tailored to your schedule.</p>
         </div>
-        <div class="service">
+        <div class="service glass">
+          <div class="icon">⚡</div>
           <h4>Local Deliveries</h4>
           <p>Same-day and next-day local delivery options with reliable tracking.</p>
         </div>
-        <div class="service">
+        <div class="service glass">
+          <div class="icon">📦</div>
           <h4>Logistics Coordination</h4>
           <p>Routing, scheduling, and logistics planning to optimize your supply chain.</p>
         </div>
@@ -69,20 +84,30 @@
     </section>
 
     <section id="contact" class="contact container">
-      <h2>Contact Us</h2>
-      <p>Reach out for a custom quote or general inquiries.</p>
-      <div class="contact-grid">
-        <div class="contact-card">
-          <h4>Call</h4>
-          <p><a href="tel:+14234902242">+1 (423) 490-22242</a></p>
+      <div class="section-head">
+        <h2>Contact Us</h2>
+        <p class="muted">Reach out for a custom quote or general inquiries.</p>
+      </div>
+      <div class="contact-area">
+        <div class="contact-info glass">
+          <h3>Get in touch</h3>
+          <p class="lead">Call or email us for a custom quote. We typically respond within one business day.</p>
+          <ul class="contact-list">
+            <li><strong>Phone:</strong> <a href="tel:+14234902242">+1 (423) 490-22242</a></li>
+            <li><strong>Email:</strong> <a href="mailto:mightyroadlogistics7@gmail.com">mightyroadlogistics7@gmail.com</a></li>
+            <li><strong>Address:</strong> 1806 Glen Oaks Terrace, Chattanooga, TN 37412</li>
+          </ul>
+          <div class="contact-actions">
+            <a class="btn-primary" href="#contact">Request Quote</a>
+            <a class="btn-ghost" href="tel:+14234902242">Call Now</a>
+          </div>
         </div>
-        <div class="contact-card">
-          <h4>Email</h4>
-          <p><a href="mailto:mightyroadlogistics7@gmail.com">mightyroadlogistics7@gmail.com</a></p>
-        </div>
-        <div class="contact-card">
-          <h4>Address</h4>
-          <p>1806 Glen Oaks Terrace<br>Chattanooga, TN 37412</p>
+        <div class="contact-map glass">
+          <iframe
+            title="Mighty Road Logistics location"
+            src="https://www.google.com/maps?q=1806+Glen+Oaks+Terrace+Chattanooga+TN+37412&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </section>
@@ -96,13 +121,37 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; <span id="year"></span> Mighty Road Logistics — All rights reserved.</p>
-      <p class="small">Design: modern, color palette black / gold / white.</p>
+      <div class="footer-inner">
+        <p>&copy; <span id="year"></span> Mighty Road Logistics — All rights reserved.</p>
+        <p class="small muted">Design: modern, color palette black / gold / white.</p>
+      </div>
     </div>
   </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+    // Try alternate logo filenames if default fails
+    (function(){
+      const img = document.getElementById('site-logo');
+      const fallbacks = ['img/logo/logo2.jpg','img/logo/logo3.jpg'];
+      img.addEventListener('error', function tryNext(){
+        const next = fallbacks.shift();
+        if(next){ img.src = next; } else { img.style.display='none'; img.removeEventListener('error', tryNext); }
+      });
+    })();
+    // Mobile nav toggle
+    (function(){
+      const btn = document.querySelector('.nav-toggle');
+      const body = document.body;
+      btn.addEventListener('click', function(){
+        const open = body.classList.toggle('nav-open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      // Close nav on resize
+      window.addEventListener('resize', function(){ if(window.innerWidth > 800 && body.classList.contains('nav-open')){ body.classList.remove('nav-open'); btn.setAttribute('aria-expanded','false'); } });
+      // Close when clicking outside
+      document.addEventListener('click', function(e){ if(!e.target.closest('.main-nav') && !e.target.closest('.nav-toggle')){ if(body.classList.contains('nav-open')){ body.classList.remove('nav-open'); btn.setAttribute('aria-expanded','false'); } } });
+    })();
   </script>
 </body>
 </html>
