@@ -1,0 +1,50 @@
+:root{
+  --bg:#000;
+  --accent:#bfa76b; /* gold-ish */
+  --muted:#fff;
+  --container:1200px;
+  --radius:8px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter,system-ui,Arial,Helvetica,sans-serif;
+  color:var(--muted);
+  background:linear-gradient(180deg,#000 0%, #070707 100%);
+  -webkit-font-smoothing:antialiased;
+}
+.container{max-width:var(--container);margin:0 auto;padding:2rem}
+.header-inner{display:flex;justify-content:space-between;align-items:center}
+.brand{display:flex;align-items:center;gap:1rem}
+.logo{height:56px}
+.site-header{border-bottom:1px solid rgba(255,255,255,0.04)}
+.brand h1{font-size:1.2rem;margin:0;color:var(--muted)}
+.contact-nav{display:flex;gap:1rem;align-items:center}
+.contact-nav a{color:var(--muted);text-decoration:none;font-size:0.95rem}
+.phone{font-weight:600;color:var(--accent)}
+.hero{padding:4rem 0}
+.hero-inner{display:grid;grid-template-columns:1fr 420px;gap:2rem;align-items:center}
+.hero-copy h2{font-size:2.2rem;margin:0 0 0.5rem;color:var(--muted)}
+.hero-copy p{margin:0 0 1.2rem;color:rgba(255,255,255,0.8);max-width:36ch}
+.btn-primary{display:inline-block;padding:0.8rem 1.2rem;background:var(--accent);color:#000;border-radius:999px;text-decoration:none;font-weight:700}
+.hero-image img{width:100%;border-radius:12px;object-fit:cover}
+.info{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;margin-top:2rem}
+.card{background:rgba(255,255,255,0.03);padding:1.4rem;border-radius:var(--radius)}
+.card h3{margin-top:0;color:var(--accent)}
+.services{margin-top:2rem}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem}
+.service{background:rgba(255,255,255,0.02);padding:1rem;border-radius:8px}
+.service h4{margin:0 0 0.4rem;color:var(--accent)}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem}
+.contact-card{background:rgba(255,255,255,0.02);padding:1rem;border-radius:8px;text-align:center}
+.footer-cta{background:linear-gradient(90deg, rgba(191,167,107,0.08), rgba(191,167,107,0.02));padding:1.2rem;margin-top:2rem}
+.site-footer{padding:1.2rem 0;margin-top:2rem;border-top:1px solid rgba(255,255,255,0.03)}
+small{color:rgba(255,255,255,0.6)}
+.link-ghost{color:var(--muted);text-decoration:underline}
+@media (max-width:900px){
+  .hero-inner{grid-template-columns:1fr}
+  .services-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .info{grid-template-columns:1fr}
+}
