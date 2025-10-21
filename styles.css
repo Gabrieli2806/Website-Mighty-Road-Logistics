@@ -282,7 +282,8 @@ ul {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%);
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.05) 0%, transparent 60%);
+    pointer-events: none;
 }
 
 .hero-content {
@@ -413,9 +414,8 @@ ul {
     padding: 2.5rem;
     border-radius: 20px;
     box-shadow: var(--shadow-sm);
-    transition: var(--transition);
+    transition: all 0.3s ease;
     position: relative;
-    overflow: hidden;
 }
 
 .service-card::before {
@@ -435,7 +435,6 @@ ul {
 }
 
 .service-card:hover {
-    transform: translateY(-10px);
     box-shadow: var(--shadow-lg);
 }
 
@@ -756,11 +755,17 @@ ul {
 .contact-card p {
     color: #666;
     line-height: 1.7;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .contact-card a {
     color: var(--primary-gold);
     font-weight: 600;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    display: inline-block;
+    max-width: 100%;
 }
 
 .contact-card a:hover {

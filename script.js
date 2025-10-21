@@ -1,6 +1,6 @@
 // ===================================
 // MIGHTY ROAD LOGISTICS - JAVASCRIPT
-// Interactive Features
+// Clean & Simple Interactive Features
 // ===================================
 
 // Smooth Scrolling for Navigation Links
@@ -47,7 +47,6 @@ document.addEventListener('click', (e) => {
 
 // Navbar Scroll Effect
 const navbar = document.getElementById('navbar');
-let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
@@ -57,8 +56,6 @@ window.addEventListener('scroll', () => {
     } else {
         navbar.classList.remove('scrolled');
     }
-    
-    lastScroll = currentScroll;
 });
 
 // Scroll to Top Button
@@ -104,44 +101,6 @@ function activateNavLink() {
 
 window.addEventListener('scroll', activateNavLink);
 
-// Animate on Scroll (Simple Implementation)
-function isElementInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-}
-
-function handleScrollAnimation() {
-    const animatedElements = document.querySelectorAll('.service-card, .feature-box, .stat-card, .contact-card');
-    
-    animatedElements.forEach((element, index) => {
-        if (isElementInViewport(element)) {
-            setTimeout(() => {
-                element.style.opacity = '1';
-                element.style.transform = 'translateY(0)';
-            }, index * 100);
-        }
-    });
-}
-
-// Initial setup for animation elements
-document.addEventListener('DOMContentLoaded', () => {
-    const animatedElements = document.querySelectorAll('.service-card, .feature-box, .stat-card, .contact-card');
-    animatedElements.forEach(element => {
-        element.style.opacity = '0';
-        element.style.transform = 'translateY(30px)';
-        element.style.transition = 'all 0.6s ease';
-    });
-    
-    handleScrollAnimation();
-});
-
-window.addEventListener('scroll', handleScrollAnimation);
-
 // Current Year for Copyright
 document.addEventListener('DOMContentLoaded', () => {
     const year = new Date().getFullYear();
@@ -156,23 +115,8 @@ const forms = document.querySelectorAll('form');
 forms.forEach(form => {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
-        // Add form handling logic here
         alert('Thank you for your interest! We will contact you soon.');
     });
-});
-
-// Preloader (Optional)
-window.addEventListener('load', () => {
-    document.body.classList.add('loaded');
-});
-
-// Parallax Effect on Hero Section
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const parallax = document.querySelector('.hero');
-    if (parallax) {
-        parallax.style.transform = `translateY(${scrolled * 0.5}px)`;
-    }
 });
 
 // Phone Number Click Tracking (Optional Analytics)
@@ -180,7 +124,6 @@ const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
 phoneLinks.forEach(link => {
     link.addEventListener('click', () => {
         console.log('Phone number clicked');
-        // Add analytics tracking here if needed
     });
 });
 
@@ -189,32 +132,6 @@ const emailLinks = document.querySelectorAll('a[href^="mailto:"]');
 emailLinks.forEach(link => {
     link.addEventListener('click', () => {
         console.log('Email link clicked');
-        // Add analytics tracking here if needed
-    });
-});
-
-// Lazy Loading for Images (if needed)
-if ('loading' in HTMLImageElement.prototype) {
-    const images = document.querySelectorAll('img[loading="lazy"]');
-    images.forEach(img => {
-        img.src = img.dataset.src;
-    });
-} else {
-    // Fallback for browsers that don't support lazy loading
-    const script = document.createElement('script');
-    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js';
-    document.body.appendChild(script);
-}
-
-// Add hover effect to cards
-const cards = document.querySelectorAll('.service-card, .feature-box, .contact-card');
-cards.forEach(card => {
-    card.addEventListener('mouseenter', function() {
-        this.style.transform = 'translateY(-10px)';
-    });
-    
-    card.addEventListener('mouseleave', function() {
-        this.style.transform = 'translateY(0)';
     });
 });
 
