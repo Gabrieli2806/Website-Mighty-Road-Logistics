@@ -1,157 +1,348 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Mighty Road Logistics</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <meta name="description" content="Mighty Road Logistics - Reliable transport and logistics services in Chattanooga, TN.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mighty Road Logistics - Professional Freight & Transportation Services</title>
+    <meta name="description" content="Mighty Road Logistics offers professional freight transportation, warehousing, and logistics solutions in Chattanooga, TN.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <img id="site-logo" src="img/logo/logo1.jpg" alt="Mighty Road Logistics logo" class="logo" onerror="this.style.display='none'">
-        <h1 class="visually-hidden">Mighty Road Logistics</h1>
-      </div>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-        <a href="#" class="nav-cta phone-cta" onclick="location.href='tel:+14234902242'">Call</a>
-        <a href="#contact" class="nav-cta primary-cta">Get a Quote</a>
-      </nav>
-      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="hero-bg" role="img" aria-label="Truck on the road">
-        <img src="img/hero-truck.jpg" alt="Truck on the road" onerror="this.style.display='none'">
-      </div>
-      <div class="container hero-inner">
-        <div class="hero-copy glass">
-          <span class="eyebrow">Mighty Road Logistics</span>
-          <h2>Reliable Transport & Logistics</h2>
-          <p>Fast, secure, and professional freight and delivery services across Chattanooga and beyond. Punctuality, security, and clear communication are our promise.</p>
-          <div class="hero-ctas">
-            <a class="btn-primary" href="#contact">Get a Quote</a>
-            <a class="btn-ghost" href="#services">Our Services</a>
-          </div>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="img/logo/logo1.jpg" alt="Mighty Road Logistics Logo">
+                <span class="logo-text">Mighty Road <span class="highlight">Logistics</span></span>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#contact" class="btn btn-primary nav-btn">Get Quote</a></li>
+            </ul>
         </div>
-      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Your Trusted Partner in <span class="highlight">Freight Solutions</span></h1>
+                <p class="hero-subtitle">Reliable, efficient, and professional logistics services tailored to your business needs</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary btn-large">Get Started</a>
+                    <a href="#services" class="btn btn-secondary btn-large">Our Services</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <i class="fas fa-truck"></i>
+                    <h3>24/7</h3>
+                    <p>Service Available</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>100%</h3>
+                    <p>Insured Cargo</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>On-Time</h3>
+                    <p>Delivery Guaranteed</p>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
     </section>
 
-    <section class="info container">
-      <div class="card glass">
-        <h3>Contact</h3>
-        <p>1806 Glen Oaks Terrace<br>Chattanooga, TN 37412</p>
-        <p>Phone: <a href="tel:+14234902242">+1 (423) 490-22242</a></p>
-        <p>Email: <a href="mailto:mightyroadlogistics7@gmail.com">mightyroadlogistics7@gmail.com</a></p>
-      </div>
-
-      <div class="card glass">
-        <h3>Our Mission</h3>
-        <p>To deliver dependable, efficient, and secure logistics solutions that help businesses succeed — on time, every time.</p>
-      </div>
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our <span class="highlight">Services</span></h2>
+                <p class="section-subtitle">Comprehensive logistics solutions for your business</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Freight Transportation</h3>
+                    <p>Reliable and timely delivery of your goods across the country with our fleet of modern vehicles.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Long-haul trucking</li>
+                        <li><i class="fas fa-check"></i> Local delivery</li>
+                        <li><i class="fas fa-check"></i> Expedited shipping</li>
+                    </ul>
+                </div>
+                <div class="service-card featured">
+                    <div class="featured-badge">Popular</div>
+                    <div class="service-icon">
+                        <i class="fas fa-warehouse"></i>
+                    </div>
+                    <h3>Warehousing Solutions</h3>
+                    <p>Secure storage facilities with inventory management to keep your products safe and organized.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Climate-controlled storage</li>
+                        <li><i class="fas fa-check"></i> Inventory management</li>
+                        <li><i class="fas fa-check"></i> 24/7 security monitoring</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3>Supply Chain Management</h3>
+                    <p>End-to-end logistics planning and coordination to optimize your supply chain efficiency.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Route optimization</li>
+                        <li><i class="fas fa-check"></i> Real-time tracking</li>
+                        <li><i class="fas fa-check"></i> Cost optimization</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-boxes"></i>
+                    </div>
+                    <h3>Cargo Handling</h3>
+                    <p>Professional loading, unloading, and handling of all types of cargo with care and precision.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Specialized equipment</li>
+                        <li><i class="fas fa-check"></i> Trained personnel</li>
+                        <li><i class="fas fa-check"></i> Damage prevention</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3>Customs Clearance</h3>
+                    <p>Simplified international shipping with expert assistance in customs documentation and clearance.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Documentation support</li>
+                        <li><i class="fas fa-check"></i> Compliance expertise</li>
+                        <li><i class="fas fa-check"></i> Fast processing</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Logistics Consulting</h3>
+                    <p>Strategic guidance to improve your logistics operations and reduce costs effectively.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Process optimization</li>
+                        <li><i class="fas fa-check"></i> Cost analysis</li>
+                        <li><i class="fas fa-check"></i> Custom solutions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="services" class="services container">
-      <div class="section-head">
-        <h2>Services</h2>
-        <p class="muted">Flexible logistics solutions tailored for businesses of all sizes.</p>
-      </div>
-      <div class="services-grid">
-        <div class="service glass">
-          <div class="icon">🚚</div>
-          <h4>Freight Transport</h4>
-          <p>Regional and long-haul trucking services tailored to your schedule.</p>
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose <span class="highlight">Mighty Road Logistics</span></h2>
+                <p class="section-subtitle">Excellence in every delivery</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Experienced Team</h3>
+                    <p>Professional drivers and logistics experts with years of industry experience</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Real-Time Tracking</h3>
+                    <p>Monitor your shipments 24/7 with our advanced tracking technology</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Competitive Pricing</h3>
+                    <p>Affordable rates without compromising on quality and reliability</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Customer Support</h3>
+                    <p>Always available to answer your questions and address your concerns</p>
+                </div>
+            </div>
         </div>
-        <div class="service glass">
-          <div class="icon">⚡</div>
-          <h4>Local Deliveries</h4>
-          <p>Same-day and next-day local delivery options with reliable tracking.</p>
-        </div>
-        <div class="service glass">
-          <div class="icon">📦</div>
-          <h4>Logistics Coordination</h4>
-          <p>Routing, scheduling, and logistics planning to optimize your supply chain.</p>
-        </div>
-      </div>
     </section>
 
-    <section id="contact" class="contact container">
-      <div class="section-head">
-        <h2>Contact Us</h2>
-        <p class="muted">Reach out for a custom quote or general inquiries.</p>
-      </div>
-      <div class="contact-area">
-        <div class="contact-info glass">
-          <h3>Get in touch</h3>
-          <p class="lead">Call or email us for a custom quote. We typically respond within one business day.</p>
-          <ul class="contact-list">
-            <li><strong>Phone:</strong> <a href="tel:+14234902242">+1 (423) 490-22242</a></li>
-            <li><strong>Email:</strong> <a href="mailto:mightyroadlogistics7@gmail.com">mightyroadlogistics7@gmail.com</a></li>
-            <li><strong>Address:</strong> 1806 Glen Oaks Terrace, Chattanooga, TN 37412</li>
-          </ul>
-          <div class="contact-actions">
-            <a class="btn-primary" href="#contact">Request Quote</a>
-            <a class="btn-ghost" href="tel:+14234902242">Call Now</a>
-          </div>
+    <!-- About/Mission Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="img/logo/logo2.jpg" alt="Mighty Road Logistics">
+                    <div class="about-badge">
+                        <i class="fas fa-truck-moving"></i>
+                        <span>Professional Service</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">Our <span class="highlight">Mission</span></h2>
+                    <p class="lead">At Mighty Road Logistics, we are committed to providing exceptional transportation and logistics services that exceed our clients' expectations.</p>
+                    <p>Our mission is to be the most trusted logistics partner in the industry by delivering reliable, efficient, and cost-effective solutions. We understand that your cargo represents more than just goods—it represents your business, your reputation, and your promises to your customers.</p>
+                    <div class="mission-points">
+                        <div class="mission-point">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Reliability</h4>
+                                <p>Consistent on-time delivery and dependable service you can count on</p>
+                            </div>
+                        </div>
+                        <div class="mission-point">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Safety First</h4>
+                                <p>Strict safety protocols and fully insured cargo protection</p>
+                            </div>
+                        </div>
+                        <div class="mission-point">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Customer Focus</h4>
+                                <p>Personalized solutions tailored to your unique business needs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="contact-map glass">
-          <iframe
-            title="Mighty Road Logistics location"
-            src="https://www.google.com/maps?q=1806+Glen+Oaks+Terrace+Chattanooga+TN+37412&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
     </section>
 
-    <section class="footer-cta">
-      <div class="container">
-        <p>Ready to move? <a href="#contact" class="link-ghost">Get in touch</a></p>
-      </div>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get in <span class="highlight">Touch</span></h2>
+                <p class="section-subtitle">We're here to help with all your logistics needs</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Address</h3>
+                        <p>1806 Glen Oaks Terrace<br>Chattanooga, TN 37412</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <p><a href="tel:+14234902242">+1 (423) 490-2242</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:mightyroadlogistics7@gmail.com">mightyroadlogistics7@gmail.com</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Business Hours</h3>
+                        <p>24/7 Service Available<br>Call us anytime!</p>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.0384687436775!2d-85.26715!3d35.04509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886060a8c70d8a55%3A0x1234567890abcdef!2s1806%20Glen%20Oaks%20Terrace%2C%20Chattanooga%2C%20TN%2037412!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-inner">
-        <p>&copy; <span id="year"></span> Mighty Road Logistics — All rights reserved.</p>
-        <p class="small muted">Design: modern, color palette black / gold / white.</p>
-      </div>
-    </div>
-  </footer>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="img/logo/logo3.jpg" alt="Mighty Road Logistics">
+                        <h3>Mighty Road <span class="highlight">Logistics</span></h3>
+                    </div>
+                    <p>Your trusted partner for reliable freight transportation and logistics solutions.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Freight Transportation</a></li>
+                        <li><a href="#services">Warehousing</a></li>
+                        <li><a href="#services">Supply Chain Management</a></li>
+                        <li><a href="#services">Cargo Handling</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 1806 Glen Oaks Terrace<br>Chattanooga, TN 37412</li>
+                        <li><i class="fas fa-phone"></i> +1 (423) 490-2242</li>
+                        <li><i class="fas fa-envelope"></i> mightyroadlogistics7@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mighty Road Logistics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    // Try alternate logo filenames if default fails
-    (function(){
-      const img = document.getElementById('site-logo');
-      const fallbacks = ['img/logo/logo2.jpg','img/logo/logo3.jpg'];
-      img.addEventListener('error', function tryNext(){
-        const next = fallbacks.shift();
-        if(next){ img.src = next; } else { img.style.display='none'; img.removeEventListener('error', tryNext); }
-      });
-    })();
-    // Mobile nav toggle
-    (function(){
-      const btn = document.querySelector('.nav-toggle');
-      const body = document.body;
-      btn.addEventListener('click', function(){
-        const open = body.classList.toggle('nav-open');
-        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-      });
-      // Close nav on resize
-      window.addEventListener('resize', function(){ if(window.innerWidth > 800 && body.classList.contains('nav-open')){ body.classList.remove('nav-open'); btn.setAttribute('aria-expanded','false'); } });
-      // Close when clicking outside
-      document.addEventListener('click', function(e){ if(!e.target.closest('.main-nav') && !e.target.closest('.nav-toggle')){ if(body.classList.contains('nav-open')){ body.classList.remove('nav-open'); btn.setAttribute('aria-expanded','false'); } } });
-    })();
-  </script>
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
 </body>
 </html>
