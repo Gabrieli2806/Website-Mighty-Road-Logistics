@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://mightyroadlogistics.com/sitemap.xml
+
+# Block access to admin or private areas (add when needed)
+# Disallow: /admin/
+# Disallow: /private/
